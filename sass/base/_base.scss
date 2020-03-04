@@ -1,0 +1,59 @@
+// COLOR VARIABLES
+$color-primary-light: #55cd44;
+$color-primary: #44bd32;
+$color-primary-dark: #194412;
+
+$color-secondary-light: #bd993e;
+$color-secondary: #a48535;
+$color-secondary-dark: #171207;
+
+$color-tertiary: #673AB7;
+$color-tertiary-dark: #58329d;
+
+$color-gray-light: #f5f6fa;
+$color-gray-light-2:#eaecf4;
+
+$color-gray-dark-1: #20272f;
+$color-gray-dark-2: #191e25;
+
+// FONT VARIABLES
+$font-primary: 'Source Code Pro', sans-serif; 
+$font-heading: 'Caveat', sans-serif;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-primary;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 80vh min-content 40vw repeat(3, min-content); //todo | 6 responsive row tracks
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] //todo | 10 columns with two minmax(6rem, 1fr) 
+    repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; //* 8 main columns are minmax(auto, 14rem)
+    
+    //*test stage
+    & > * {
+        padding: 40px;
+        font-size: 3rem;
+    } 
+    //*test stage
+}
+
+.services { //* Main
+
+}
