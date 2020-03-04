@@ -1,2 +1,2 @@
 # Villa - Ilalo Project
-Welcome to the project :)
+Welcome to the project :-)
